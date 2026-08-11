@@ -1,0 +1,39 @@
+Options DHCP server looks at when a DHCP request is made (Scope):
+
+IP address range, and excluded range
+subnet mask
+lease durations
+
+DHCP pools:
+each subnet has its own scope 
+
+Dynamic Assignment:
+given randonmly from large pool of addresses
+addresses are reclaimed after lease period
+
+Automatic assignment:
+similar to dynamic allocation
+DHCP server keeps list of past assignments
+You might get the IP you had last time, if it's not been taken since you left
+
+Address Reservation:
+admin manual config
+table of MAC addresses assigned to an IP address 
+
+DHCP leases:
+assigned a lease time by DHCP server (can be configured)
+
+DHCP renewal:
+T1 timer - 50% of lease time - then your device will attempt to communicate with original DHCP server
+T2 timer - 87.5% of lease time - original DHCP server might be down, try rebinding with ANY DHCP server
+
+DHCP options:
+special field in the DHCP message
+1-254
+two values are reserved: 0 is pad, 255 is end
+Many options:
+- subnet mask
+- DNS 
+- Domain name
+Option 129: Call Server IP Address
+Option 135: HTTP proxy for phone-specific applications

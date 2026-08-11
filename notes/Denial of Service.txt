@@ -1,0 +1,21 @@
+Force a service to fail
+
+1. overload with packets
+2. take advantage of exploit (why patching is important)
+3. make system unavailable
+4. create a smokescreen for other exploit (precursor to a DNS spoofing attack)
+5. could be as simple as turning off power switch
+
+"Friendly" DoS
+- network DoS - layer 2 loop without Spanning Tree Protocol (STP)
+- bandwidth DoS - downloading a multi-gigabyte Linus distro over DSL
+- water line break over servers
+
+DDoS:
+- botnets coordinating an attack
+- asymmetric threat - attacker with much smaller resources can attack large companies
+
+DDoS reflection/amplification:
+- send small amount of info to a server while spoofing targets IP - receive large response
+- multiplied by 1000s of zombie hosts, target is overwhelmed
+- easy to do using Protocols with minimal authentication checks (NTP, DNS, ICMP)

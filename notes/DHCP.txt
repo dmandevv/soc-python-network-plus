@@ -1,0 +1,29 @@
+IPv4 address configuration used to be manual
+
+The bootstrap protocol (BOOTP) was made to solve this
+- didn't automatically define everything
+- didn't know when IP left network
+
+Dynamic Host configuration protocol (DHCP):
+- provides automatic address/IP configuration for most devices
+
+DHCP process is 4 steps, called DORA:
+
+1. Discover: find a DHCP server
+- DHCP Discover from 0.0.0.0:udp/68 to 255.255.255.255:udp/67 broadcast
+2. Offer: get offer from DHCP server
+- DHCP offer from 10.10.10.99:udp/67 to 255.255.255.255:udp/68 broadcast
+3. Request: request one of the offered IP addresss
+DHCP Request from 0.0.0.0:udp/68 to 255.255.255.255:udp/67 broadcast
+4. Acknowledge: tell server we have recieved IP and are using it
+DHCP Acknowledge from 10.10.10.99:udp/67 to 255.255.255.255:udp/68 broadcast
+
+Limited by broadcast frames being contained to subnet, routers wont forward them
+Multiple servers for redundancy, but keep them centralized
+
+DHCP relay (helper):
+- send DHCP traffic to another subnet even though it was broadcasted
+- Routers configured with DHCP relay will have the IPs of DHCP servers in other networks
+
+
+

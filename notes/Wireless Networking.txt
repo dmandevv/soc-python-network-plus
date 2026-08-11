@@ -1,0 +1,22 @@
+802.11 - managed by IEEE
+
+802.11a - 5GHz - 6-54 Mbits/s
+802.11b - 2.4Ghz - 1-11 Mbits/s
+802.11g - 2.4GHz - 6-54 Mbits/s
+802.11n - 2.4/5GHz - 72-600 Mbits/s (Wi-Fi 4)
+802.11ac - 5Ghz - 433-6933 Mbits/s (Wi-Fi 5)
+802.11ax - 2.4/5/6GHz - 574-9608 Mbits/s (Wi-Fi 6 and 6E)
+802.11be - 2.4/5/6GHz - 1376-46120 Mbits/s (Wi-Fi 7)
+
+
+Long Term Evolution (LTE):
+4G
+converged GSM and CDMA
+LTE-A doubles speed
+
+5G launched in 2020
+impacted IoT
+ - bandwidth less of a constraint
+ - faster monitoring and notification
+
+Satellite Networking

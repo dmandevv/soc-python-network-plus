@@ -1,0 +1,12 @@
+Network Function Virtualization (NFV):
+- replace physical Network devices with virtual ones
+- manage from hypervisor
+- same functionality as physical
+- quickly and easily deploy
+- VM, containers, fault tolerance
+
+Virtual Private Cloud (VPC):
+- pool of resources created in a public Cloud
+- create many VPCs for different applications
+- connected to a transit gateway (cloud router)
+- usually on different IP subnets, connect through a VPN

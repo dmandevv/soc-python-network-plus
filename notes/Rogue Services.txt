@@ -1,0 +1,32 @@
+No inherent security in DHCP
+clients can be assigned invalid or duplicate addresses
+
+Disable by doing:
+- enable DHCP snooping on the switch (examines all DHCP requests, only allow from authorized servers)
+- authorized DHCP servers in Active Directory, only these can hand out IP addresses
+
+Disable the rogue DHCP server:
+- remove it from network
+- renew all IP addresses on network
+
+
+Rogue Access Point:
+- unauthorized
+- might just be an employee looking for better coverage
+- counter by scheduling surveys of site, or 3rd party tools to scan for them
+- 802.1X on official network switches, prevents unofficial APs from connecting as they can't authenticate
+
+
+Wireless Evil Twin:
+- same SSID and security settings/captive portal
+- signal strength usually overpowered, drowns out legitamite AP signal
+- Counter by using HTTPS and VPN
+
+
+On-path network attack:
+- intercepts your packet, read/edits it, redirects to intended source
+- ARP poisoning
+- session hijacking
+- HTTPS spoofing
+- Wi-Fi eavesdropping
+- ENCRYPT COMMUNICATION to stop this

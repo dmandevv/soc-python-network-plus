@@ -1,0 +1,40 @@
+There's a limited amount of frequency
+Access points close to each other on same freqeuncies can cause interference
+Most APs can monitor frequency usage.
+    - can change frequency to unused ranges if interference is detected
+    - can be manually configured as well
+
+Band selection and bandwidth:
+5Ghz has more freqeuncies than 2.4Ghz
+6Ghz has even more
+
+Managing channel usage:
+- disable legacy, low speed support if no devices need it
+- check your channels, avoid overlapping between APs, or just turn on automatic configuration
+- adjust output power
+- split the network (more APs on differing freqeuncies)
+
+Attenuation:
+- wireless signals get weaker the farther they go
+- measure with Wi-Fi analyzer
+- control power output so signals go only as far as they need to
+- use a receiver antenna to capture more data
+- power is lost in the cable coax, use shortest possible cable and ensure it's not damaged
+
+Insufficient wireless coverage:
+- sample the already existing wireless spectrum
+- identify APs
+- work around existing freqeuncies
+- plan for ongoing site surveys
+- create a Heat Map for easy visualization
+
+Client Disassociation Issues:
+- DoS attack
+- Causes devices to drop from network, try to reconnect, then drop again
+- Disassociation frames can be clearly seen in a packet capture
+- upgrade to more modern 802.11 standard to prevent
+
+Roaming Misconfiguration:
+- wiress network often has single SSID
+- can have multiple APs for one SSID
+- each AP needs to have exact same configuration for a seamless user experience

@@ -1,0 +1,28 @@
+Loop protection:
+- connect two switches with cables forming a Loop
+- will send traffic back and forth forever
+- no counting mechanism at the MAC layer
+- network will crash
+- IEEE 802.1D prevents loops in bridged (Switch) networks
+
+Spanning Tree Protocol 802.1D (STP)
+
+STP port states
+- Blocking
+    - not forwarding to prevent a loop
+- Listening
+    - not forwarding and cleaning the MAC table
+- Learning
+    - not forwarding and adding to the MAC table
+- Forwarding
+    - data passes through
+- Disabled
+    - Admin has turned off port
+
+Rapid Spanning Tree Protocol 802.1W (RSTP)
+
+- current standard, upgrade from STP
+- faster convergence, from 30-50 seconds down to 6 seconds
+- backwards compatible with 802.1D STP
+
+

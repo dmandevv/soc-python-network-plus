@@ -1,0 +1,42 @@
+Routers send routes to each other
+
+Advantages
+- no manual route calculations or management
+- new routes populated automatically
+- scalable
+
+Disadvantages
+- router overhead (cpu, memory, bandwidth)
+- requires some initial configuration to get started
+
+Protocols:
+
+listen for subnet information from other Routers
+provide subnet information to other Routers 
+determines the best path
+update routes when network changes
+
+Which routing protocol to use?
+- based on state of the link
+- based on how far away it is
+
+OSPF and BGP are standards, EIGRP is Cisco proprietary
+
+Enhanced Interior gateway Routing Protocol (EIGRP)
+- loop free
+- efficient discovery of neighbours (bandwidth saver)
+
+Open Shortest Path First (OSPF):
+- common interior gateway protocol
+- used as a single autonomous system (AS)
+- well established
+- Link-state protocol
+    - Routing is based on the "cost" between Routers
+    - e.g. throughput, reliability, round-trip time
+- low cost and fastest path winds, identical costs are load balanced
+
+Border Gateway Protocol (BGP):
+- exterior gateway protocol
+- connect different autonomous systems (AS)
+
+"Three napkins protocol"

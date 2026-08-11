@@ -1,0 +1,42 @@
+IEEE 802.3 committee maintains Ethernet standards
+
+1000Base-T - Gigabit ethernet - Copper - 1GBit/s
+10GBase-T - 10 Gigabit ethernet - Copper - 10GBit/s
+10GBase-SX - Gigabit ethernet - Fiber - 1GBit/s
+
+T is twisted copper pair
+F is Fiber
+SX would be short wavelength light
+
+Fiber Communication:
+No RF signal - harder to tap
+signal slow to degrade
+immune to radio interferance
+
+Multimode Fiber:
+short range (2km)
+cheap, LED
+
+Single-mode Fiber:
+long range (100km)
+expensive, lasers
+
+Twisted Pair Copper Cable:
+balanced pair
+two wires with equal and opposite signals
+Transmit+/Transmit- and Receive+/Receive-
+wires twist away from interferance
+opposite signals are compared on other end
+
+Coaxial Cable:
+two or more forms share a common axis
+RG-6 for tv/Cable
+internet over Cable
+
+Twinaxial Cable:
+two innder conducators (twinax)
+common on 10Gbit ethernet
+short distance, low cost
+
+Plenum-rated Cable:
+PVC or FEP jacket

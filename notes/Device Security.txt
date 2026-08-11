@@ -1,0 +1,34 @@
+Disable unused ports
+Control access with a NGFW
+Applications can have large port ranges (0-65535)
+Use Nmap to scan for open ports
+
+Changing default credentials is important!
+Port Security: Prevent unauthorized users from connecting to a switch interface
+    - alert sent out or disables port
+    - based on source MAC address
+    - each port has its own config
+
+1. configure a maximum number of source MAC addresses on an interface
+2. the switch monitors the number of unique MAC addresses (keeps a list)
+3. once limit is exceeded, Port Security activates (alert can be sent, default is to disable interface)
+
+
+Disable unused interfaces
+Network access control (NAC):
+802.1X, prompts for authentication
+
+MAC filtering:
+- limit access by physical MAC address
+- attackers can spoof -> packet capture, read valid MAC address, change software on their Network adapter to show the captured MAC address, now impersonating the device
+- Security through obscurity
+
+
+Key management system:
+- centralized manager
+- separates encryption keys from the data
+Key console:
+    - create keys for service/cloud provider
+    - associate key with user
+    - rotate keys on set time interval
+    - log key use

@@ -1,0 +1,28 @@
+Concentrator:
+- encryption/decryption access device
+- often part of firewall
+
+- VPNs can be specialized cryptographic hardware or software-based
+
+Client-to-site VPN:
+- on-demand accress from a remote device
+- connects to VPN Concentrator
+- can be configured to be "always-on"
+
+Site-to-site VPN:
+- always-on
+- Firewalls act as VPN Concentrators
+
+Clientless VPN:
+- HTML5
+- API support (web cryptograpy API)
+- just need to use an HTML5 compliant browser
+
+
+Full Tunnel:
+- ALL traffic sent through VPN Tunnel
+
+Split Tunnel:
+- VPN traffic sent through Tunnel
+- Non-VPN traffic (non work related, non confidential) is sent normally
+

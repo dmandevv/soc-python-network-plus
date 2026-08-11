@@ -1,0 +1,85 @@
+Loopback address:
+127.0.0.1 to 127.255.255.254
+
+Reserved addresses:
+240.0.0.1 to 254.255.255.254
+All "class E" addresses
+
+Virtual IP Adresses (VIP):
+not associated with network adapter
+virtual machine, internal router address
+
+OSI Layer 3
+
+192.168.1.131
+
+1100000 10101000 0000001 10000011
+8 bits = 1 bytes = 1 octet
+32 bits = 4 bytes
+
+Dynamic Host Configuration Procotol (DHCP):
+automatic IPv4 address Configuration
+
+Automatic Private IP Addressing (APIPA):
+- link local address
+- can only communicate to local devices
+IETF has reserved 169.254.0.1 to 169.254.255.254
+first and last 256 addresses are reserved
+ARP used to confirm address isn't in use
+
+NAT converts private IP address to a public one
+
+Classful subnetting:
+
+
+PRACTICE 1
+
+IP Address 10.74.222.11
+Class A!
+Subnet mask is 255.0.0.0
+
+Network bits: 10.
+Host bits: 74. 222. 11
+
+Subnet calculation:
+
+1. Network Address (set all host bits to 0)
+10.0.0.0
+
+2. First host address (add one to Network address)
+10.0.0.1
+
+3. Broadcast address (set all host bits to 1)
+10.255.255.255
+
+4. Last host address (subtract one from Broadcast address)
+10.255.255.254
+
+
+PRACTICE 2
+
+IP address: 172.16.88.200
+Class B!
+Subnet mask is 255.255.0.0
+Network bits: 172.16
+Host bits: 88.200
+
+Network Address: 172.16.0.0
+First Host Address: 172.16.0.1
+Broadcast Address: 172.16.255.255
+Last Host Address: 172.16.255.254
+
+
+PRACTICE 3
+
+IP address: 192.168.4.77
+Class C
+Subnet Mask: 255.255.255.0
+Network bits: 192.168.4
+Host bits: .77
+Network Address: 192.168.4.0
+First Host Address: 192.168.4.1
+Broadcast Address: 192.168.4.255
+Last Host Address: 192.168.4.254
+
+

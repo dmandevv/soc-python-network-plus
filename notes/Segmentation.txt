@@ -1,0 +1,34 @@
+Physical, logical, virtual segmentation
+
+Performance - high bandwidth applications
+Security - users should not talk directly to database servers
+Compliance - PCI mandated separation
+
+IoT devices:
+- sensors
+- smart devices
+- wearable tech
+- weak defaults
+
+Industrial IoT (IIOT):
+- machine to machine communication
+- segmentation needed, more data at stake
+- facility automation - temp, air quality, lighting
+- ICS monitoring
+
+Supervisory Control and Data Acquisition System (SCADA):
+- large scale ICS
+- distributed control systems
+- real time
+- air gapped
+
+Operational Technology (OT):
+- electric grids, traffic control, manufacturing plants
+- power grid drops, all traffic lights stuck on green, plant shuts down
+- much more critical
+
+Guest Networks:
+- for visitors
+- separated
+- password or captive portal
+- firewalled from rest of network 

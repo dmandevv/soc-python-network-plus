@@ -1,0 +1,56 @@
+Fully Qualified Domain Name (FQDM):
+api.google.com
+
+Primary and secondary DNS servers:
+provide redundancy
+Primary contains all the zone info for a domain 
+Secondary is read only, all data from Primary is sent to here as a backup
+
+Local name resolution:
+might need to override the DNS server
+- access a test server
+- DNS might be configured wrong
+Hosts file:
+contains list of IP addresses and host names
+Some apps might not use hosts file 
+
+Forward DNS:
+Give the server the FQDM - receive the IP address 
+Reverse DNS:
+Give the server the IP address - receive the FQDM
+
+Authoritative server:
+- DNS server is the authority for the zone
+Non-authoritative server:
+- does not contain zone source files
+- cached info
+
+Time to live (TTL):
+- configured on authoritative server
+- specifies how long the cache is valid (in seconds)
+
+Recursive DNS queries:
+populate local cache
+ask root server, who will ask domain name server, which has a reference to the domain requested, and then returns the IP address asscoiated with it
+IP address is stored in local name server
+cached address is faster and more efficient
+lasts until TTL expires
+
+
+Securing DNS:
+often transmitted in clear, easy to spoof
+
+    Domain Name Security Extensions (DNS_SEC) solves this:
+    DNS responses from server are digitally signed
+    - requires additional configuration on the DNS server to work
+
+Encrypting DNS:
+
+    DNS over TLS (DOT):
+    send traffic over tcp/853 and encrypt with TLS/SSL
+
+    DNS over HTTP (DoH):
+    DNS traffic in HTTPS packets
+    looks like web server communication over tcp/443
+    some browsers use DoH by default
+

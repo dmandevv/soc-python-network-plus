@@ -1,0 +1,13 @@
+Content Delivery Network (CDN):
+- distributed caching servers
+
+Virtual Private Network (VPN):
+- concentrator/head-end - encryption/decryption access device (usually part of firewall)
+
+Quality of Service (QoS):
+- traffic shaping, packet shaping
+- control applications bandwidth usage by setting priorities
+
+Time to Live (TTL):
+- number of hops, certain time has elapsed
+- drop packet caught in a loop, clear a cache

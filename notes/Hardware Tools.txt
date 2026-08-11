@@ -1,0 +1,32 @@
+Tone Generator:
+- where does that wire go? Follow the Tone
+- outs an analog sound on wire
+- then use an Inductive Probe to listen to wire
+- connect the tone generator to the wire:
+    modular jack, coax, punch down connector
+- use Probe to locate sound
+
+Cable Tester:
+- check if pins are connected/disconnected
+- crossed wires
+- verifies punchdown done properly
+
+Taps and port mirrors:
+- intercept network traffic
+- Physical taps: disconnect the link, put tap in middle
+    - can be active or passive (power)
+- Port Mirror (SPAN)
+    - software based
+    - bandwidth limited
+
+Wireless Survery Tool:
+- signal coverage, potential interferance, built in or 3rd party
+
+Wi-Fi Analyzer:
+- hardware based
+- view all 802.11 info in the air
+- Spectrum analyzer can check frequencies
+
+Visual Fault Locator:
+- flashlight for optical fiber
+- shine light down fiber, can see light bleeding from broken fiber jacket

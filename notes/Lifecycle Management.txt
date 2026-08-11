@@ -1,0 +1,32 @@
+End of Life (EOL):
+- manufacturer stops making product
+- may continure to provide security patches
+- warrant repair
+
+End of Service/Support (EOS):
+- manufacturer stops updating product
+- no more security updates
+
+Service Packs: contain large amount of updates bundled
+Monthly updates: incremental
+Emergency updates: zero day
+
+Firmware Management:
+- software inside of hardware
+- always have a rollback plan (save Firmware binaries)
+
+Decommissioning:
+- asset disposal
+- sanitize media or destroy device
+- may have legal issues
+    - some information cannot be destroyed (legal hold)
+    - consider offsite storage
+- do NOT throw in dumpster
+
+Change Management:
+- how to make a Change
+- have clear policies: frequency, duration, installation process, fallback prodecures
+
+Request Process Tracking:
+help desk
+- take call, triage, determine next step, assign ticket and monitor

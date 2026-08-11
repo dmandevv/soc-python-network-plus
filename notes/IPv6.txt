@@ -1,0 +1,26 @@
+communicating between IPv4 and IPv6
+
+1. Tunneling IPv6
+- designed for temp use
+
+6to4 addressing
+- send IPv6 over an exisiting IPv4 network
+- creates an IPv6 address based on the IPv4 address
+- requires relay routers
+- no support for NAT
+- deprecated
+
+4in6 tunneling
+- tunnel IPv4 traffic on a IPv6 network
+
+2. Dual stack routing
+- run both
+- interfaces will be assigned multiple address types
+- seperate routing tables
+- each use their respective routing protocols
+
+3. Translating between IPv4 and IPv6
+- NAT using NAT64
+- IPv6 is not backwards compatible with IPv4
+- need a NAT64-capable router
+- works with a DNS64 server

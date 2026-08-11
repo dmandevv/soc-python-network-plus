@@ -1,0 +1,85 @@
+File Transfer Protocol (FTP):
+TCP/20 (active data)
+TCP/21 (control data)
+- list, add, delete, etc.
+
+Secure Shell (SSH):
+TCP/22
+
+Secure FTP (SFTP):
+- encrypted FTP
+TCP/22 (SSH File Transfer Protocol)
+
+Telnet:
+TCP/23
+Plaintext
+Use SSH instead
+
+Simple Mail Transfer Protocol (SMTP):
+server to server email
+TCP/25 (SMTP with Plaintext)
+TCP/587 (SMTP with TLS encryption)
+Clients sending mail to mail server
+Clients receiving mail (IMAP, POP3)
+
+DNS:
+UDP/53
+TCP/53 for large transfers
+
+Dynamic Host Configuration Protocol (DHCP):
+UDP/67
+UDP/68
+automated Configuration of IP address, subnet mask, etc.
+dynamic, pooled list of IP addresses
+DHCP reservation - assigned by MAC address
+
+Trivial File Transfer Protocol (TFTP):
+UDP/69
+Very simple file transfer
+NO authenitcation
+Transfer config files quick and easily
+
+HTTP and HTTPS:
+TCP/80 for HTTP
+TCP/443 for HTTPS
+
+Network Time Protocol (NTP):
+synchronize logs, outage times, authentication info
+UDP/123
+
+Simple Network Management Protocol (SNMP):
+gather statistics from network devices
+UDP/161
+v1 - in the clear
+v2 - bulk transfer
+v3 - integrity, authenitcation, encryption
+SNMP Trap - alerts and notifications from network devices on UDP/162
+
+Lightweight Directory Access Protocol (LDAP):
+TCP/389
+store and retrieve info in a network Directory
+LDAP Secure
+non standard implementation of LDAP over SSL
+TCP/636
+
+Server Message Block (SMB):
+Windows Protocol
+file sharing, printer sharing
+also called CIFS
+built into Windows
+TCP/445 (NetBIOS-less)
+
+Syslog:
+message logging
+diverse systems, consolidated log
+UDP/514
+Used alongside SIEM
+
+Remote Desktop Protocol (RDP):
+TCP/3389
+
+Session Initiation Protocol (SIP):
+Voice over IP (VoIP)
+TCP/5060 and TCP/5061
+Setup and manage VoIP sessions (call, ring, busy, hang up)
+Video conferencing, instant messaging, file transfer

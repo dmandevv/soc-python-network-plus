@@ -1,0 +1,15 @@
+SSH - tcp/22
+replaces telent - tcp/23
+
+Virutal Network Computing (VNC):
+- Remote Frame Buffer (RFB) Protocol
+- clients for many OS (RDP just for Windows)
+
+In-band management:
+- assign an IP address to device and connect through HTTPS
+- 10/100/1000 MGT interfaces
+
+Out-of-band management:
+- the Network isn't available
+- use a serial connection / USB instead
+- Dial into a "comm server" on a "console router"

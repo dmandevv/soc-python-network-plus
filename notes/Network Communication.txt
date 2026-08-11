@@ -1,0 +1,23 @@
+Unicast:
+one station directly sending info to another
+one-to-one
+websurfing, file transfers
+doesn't scale (can't really do real-time media streaming)
+IPv4 and IPv6
+
+Multicast:
+one-to-many-of-many
+multimedia, stock exchanges, dynamic routing updates
+very specialized, difficult to scale
+
+Anycast:
+single destination IP has many paths to other endpoints
+one-to-one-to-many
+packets send to an anycast address are delivered to the closest interface
+Anycast DNS
+
+Broadcast:
+one-to-all
+limited scope
+routing updates, ARP
+not used in IPv6

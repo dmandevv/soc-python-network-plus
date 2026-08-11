@@ -1,0 +1,38 @@
+Routing Tables:
+- path to get from A to B 
+- shows Default Gateway and static routes
+- know if your data can reach target, but also if the data can get back to you
+
+    Missing Route:
+    - packet will just be dropped
+    - ICMP host unreachable message will be sent to source address
+
+    Gateway of last resort:
+    - no route that can fufill traffic? this can solve that issue
+    - added as a static default route (0.0.0.0/0)
+    - Forwards traffic to an upstream router or internet service provider when local routes fail
+
+    Address Pool Exhaustion:
+    - all IP addresses are taken
+    - client receives an APIPA address instead
+    - private IP that can only communicate with local subnet (non routeable IP address)
+    - check the DHCP server and add more IP addresses if you can
+    - or check an IP address management (IPAM) console to see details on each IP being used
+    - finally you could lower the lease time (transient users won't be holding IP addresses hostage)
+
+        Troubleshooting:
+        - packet capture for IP address or subnet info
+        - check devices around you, confirm their subnet masks and what gateway they are talking to
+        - traceroute and ping
+        - ping local IP, default gateway, and outside address
+
+    Duplicate IP Addresses:
+    - static address assinged to twice
+    - multiple DHCP servers with overlapping IP range pools
+    - rogue DHCP servers handing out ranges you're not expecting
+    - OS can check and block this
+
+        Troubleshooting:
+        - if the device was manually configured: check IP address, subnet mask and default gateway
+        - ping an IP address before static addressing (if you receive a response, it's taken!)
+            - if response is received -> check ARP table for MAC address of the responding device to find which interface its communicating from

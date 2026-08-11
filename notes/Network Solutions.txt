@@ -1,0 +1,34 @@
+Network Discovery:
+- Link Layer Discovery Protocol (LLDP)
+- Cisco Discovery Protocol (CDP)
+- IP Scanners (Nmap)
+- SNMP
+
+Ad hoc scans as needed
+Scheduled scans at intervals
+
+Traffic analysis:
+- timestamp, src/dst IPs, port numbers, application, bytes transfered
+- report generation and forensic analysis
+
+Performance Monitoring:
+- use SNMP, NetFlow, Protocol analysis, software agent
+
+Availabiltiy Monitoring:
+- green if device is up, red if down
+- alarms and alerts can be sent if interface fails
+- short and long term Monitoring
+
+Network device backup and restore:
+- every device has a configuration
+- configs can be downloaded/uploaded
+- use backups to return to previous config
+- may require firmware or version downgrade (essential to keep binaries of these older versions)
+
+Configuration Monitoring:
+- ten identical web servers, how to confirm compliance?
+Monitor the configs:
+- verify consistency
+- alert on any changes
+- backup and restore
+Often part of larger management change system

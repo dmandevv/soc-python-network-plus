@@ -1,0 +1,19 @@
+Define different VLANs
+- organizational, network engineering, security cameras
+- you only have access to your VLAN
+- can "hop" to another VLAN in 2 ways
+
+1. Switch spoofing:
+- takes advantage of a configuration on a switch that auto-configs an interface as either a "device" or "switch"
+- if a switch sees another switch, it will send a "trunk negotiation"
+- Switch spoofing works by a device pretending to be a switch
+- this works because no authentication is required
+- admins should disable trunk negotiation
+
+2. Double tagging:
+- craft a packet that includes two VLAN tags 
+- takes advantage of the "native" VLAN configuration
+- 1st "native" tag is read and removed by first switch, placed into the 1st VLAN - all is good
+- 2nd "fake" tag is read and removed by second switch, packet has hopped into a VLAN they might not be allowed into
+- this is a one way trip
+- to solve, don't put devices on "native" VLAN

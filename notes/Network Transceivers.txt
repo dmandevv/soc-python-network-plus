@@ -1,0 +1,27 @@
+Small Form-factor Pluggable (SFP)
+Quad Small Form-factor Pluggable (QSFP)
+- four channel SFP/SFP+
+
+
+Fibre Connectors:
+Subscriber Connector (SC)
+Local Connector (LC)
+Straight Tip (ST)
+Multi-fiber Push On (MPO)
+- 12 fibers in one Connector
+
+Copper Connectors:
+
+RJ11
+- telephone/DSL connection
+- phone jack
+
+RJ45
+- modular, ethernet
+
+F-Connector
+- coaxial cable
+- cable modem, Data Over Cable Service Interface Specification (DOCSIS)
+
+BNC Connector
+- coaxial cable

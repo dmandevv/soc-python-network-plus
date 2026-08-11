@@ -1,0 +1,51 @@
+Data in transit:
+- transmitted over network
+- data in motion
+- encrypted with TLS or IPSec
+
+Data at rest:
+- on a storage device
+- encrypt as written to storage drive
+- full disk encryption, database encryption, file/folder level encryption
+- apply permissions, access control lists
+
+Public Key Infrastructure (PKI):
+- policies, procedures, hardware, software, people
+- digital certificates: create, distribute, manage, store, revoke
+- binding of publics keys to people/devices
+
+Digital Certificates:
+- public key certificate
+- binds public key with a digital signature
+- PKI uses Certificate Authorities (CA)
+- Web of trust adds other users
+- OS can create certificates
+
+Certificate Authorities:
+- centralized authority that signs digital certificates
+- if you trust the CA, you can trust the website
+
+Self-signed Certificates:
+- internal use, signed by your company
+
+Identity and Access Managament (IAM):
+- applications are available everywhere (desktop, browser, mobile)
+- data is everywhere (cloud storage, private data centers)
+- different users (employees, vendors, contractors, customers)
+- Need to give right permissions to the right people at the right time 
+
+Identity Lifecycle Managament:
+1. every entity (humans/devices) gets a digital ID 
+2. least privilege
+3. entitys must authenticate and be authorized
+4. track entity's resources access (might be a regulation)
+
+Role-based Access Control (RBAC):
+- manager, director, team lead
+- admins provide accress based on role of user
+- Windows, use Groups
+
+Geographic restrictions:
+- network locations: IP subnet (mobile devices complicate this)
+- Geolocation: GPS, 802.11 wiress access point name
+- Geofencing: automatically restrict access when the user is in a particular reason

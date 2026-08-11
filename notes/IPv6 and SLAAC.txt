@@ -1,0 +1,26 @@
+IPv6 doesn't need DHCP servers, stateless addressing:
+- no separate servers
+- no tracking of IP or MAC addresses
+- least times don't exist
+
+Neighbour Discovery Protocol (NDP):
+- No broadcasts!
+- Replaces IPv4 ARP
+
+    Stateless Address Autoconfiguration (SLAAC):
+    - automatically configure an IP address without a DHCP server 
+
+    Duplicate Address Detection (DAD):
+    - no duplicate IP address already exists
+
+    Discover routers:
+    - Router Solicitation (RS)
+    - Router Advertisement (RA)
+
+
+Example:
+Your device needs to know what local subnet it is on. 
+NDP sends a Router Solicitation to the router.
+Router returns a Router Advertisement to the device, containing the 64-bit IPv6 subnet prefix
+IPv6 address of device = subnet prefix + interface ID (can be randomized, some vendors will take MAC address and insert "ff:fe" into it to generate interfce ID)
+But first! Use Duplicate Address Detection to ensure IP address isn't already in use!
