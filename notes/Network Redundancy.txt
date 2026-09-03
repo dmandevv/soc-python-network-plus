@@ -1,9 +1,0 @@
-Active-passive:
-two devices are installed and configured, but only one is Active
-if one device fails, other takes over
-constant communication between devices
-config data and real-time session data is constantly synchronized
-
-Active-active:
-use two identical devices at the same time
-need to ensure data flows in right direction
