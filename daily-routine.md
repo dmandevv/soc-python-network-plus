@@ -6,25 +6,34 @@ Claude follows this file to pick up where things left off, and updates *Where th
 
 ## The shape of a day
 
+**The blocks form a loop, and each day resumes where the previous one stopped.** Do three or four consecutive blocks; whichever you don't reach becomes tomorrow's starting point.
+
+```
+  1  Network+  →  2  Packet Tracer  →  3  Packet analysis  →  4  LetsDefend
+  ↑                                                                      │
+  └──────────────────────────────────────────────────────────────────────┘
+```
+
 | Block | Track | Source |
 |---|---|---|
-| **1** | **Network+ — one objective section** | The objectives walkthrough in `objectives/` |
-| **2** | **Network configuration** | Packet Tracer |
-| **3** | **Packet analysis** | malware-traffic-analysis.net |
-| **4** | **SOC simulation** | LetsDefend |
-| *5 — optional* | *Whatever has momentum* | *TryHackMe, CyberDefenders, or picoCTF* |
+| **1** | Network+ — one objective section | The walkthrough in `objectives/` |
+| **2** | Network configuration | Packet Tracer |
+| **3** | Packet analysis | malware-traffic-analysis.net |
+| **4** | SOC simulation | LetsDefend |
 
-**Block 1 first, while attention is freshest** — it is the one with an exam attached.
+**A fixed order means the last block is always the one that gets dropped.** Rotating the start means every track is first roughly one day in four, and none is permanently last.
 
-**Blocks 2–4 can be reordered freely.** Skipping one is fine; skipping the same one repeatedly means it should be swapped for something from the reserve list in practice-resources.md.
+**⚠️ One asymmetry worth knowing:** Network+ has an exam attached and the others don't. On a short day it is the one to protect — but that is a judgement call, not a rule the rotation enforces.
 
 ## Where things stand
+
+**Tomorrow starts at block 4** — today ended after block 3.
 
 | Track | Position | Next |
 |---|---|---|
 | **Network+** | 16 of 20 objectives complete | **3.5 — network access and management methods** |
-| **Packet Tracer** | Not started | Install, then Networking Academy *Networking Basics* |
-| **Packet analysis** | Not started | Oldest exercise on malware-traffic-analysis.net, working forward |
+| **Packet Tracer** | **Rebuilding the homelab in simulation** — devices cabled, VLANs created, access ports assigned, trunk built and verified on both ends | **Step 4 — SVIs, IP addressing, and `ip routing` on the 3560** |
+| **Packet analysis** | **First exercise complete** — *First to Last*, 2026-08-09. FormBook C2, identified the infected host, user account, and C2 destination among decoy traffic | Next exercise **backwards** from 2026-08-09 — the site advises against starting with the oldest, since malware evolves and early exercises are less representative |
 | **LetsDefend** | Not started | *SOC Fundamentals* |
 | **OverTheWire Bandit** | ✅ Complete (mid-2026) | — |
 
