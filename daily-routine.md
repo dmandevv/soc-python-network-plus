@@ -32,8 +32,8 @@ Claude follows this file to pick up where things left off, and updates *Where th
 | Track | Position | Next |
 |---|---|---|
 | **Network+** | **17 of 20 — Domain 3 complete** | **4.1 — basic network security concepts** |
-| **Packet Tracer** | **Rebuilding the homelab in simulation** — devices cabled, VLANs created, access ports assigned, trunk built and verified on both ends | **Step 4 — SVIs, IP addressing, and `ip routing` on the 3560** |
-| **Packet analysis** | **First exercise complete** — *First to Last*, 2026-08-09. FormBook C2, identified the infected host, user account, and C2 destination among decoy traffic | Next exercise **backwards** from 2026-08-09 — the site advises against starting with the oldest, since malware evolves and early exercises are less representative |
+| **Packet Tracer** | **Homelab model working end to end** — VLANs, trunk, SVIs, inter-VLAN routing, and ACLs enforcing the isolation policy. DMZ, IoT, and Trusted all restricted; verified in both directions | **Step 8 — model the WAN side.** `ip nat` is available on the 3560, so NAT and an inbound ACL representing a traditional "443 only" DMZ can both be built |
+| **Packet analysis** | **2 complete** — *First to Last* (FormBook C2) and *Easy as 123* (NetSupport RAT, lateral movement to a domain controller). Tradecraft notes in [analysis-lessons.md](analysis-lessons.md) | ***Lumma in the Room-ah!*, 2026-01-31** — then *It's a trap!* (2025-06-13) |
 | **Homelab** | **Phase 1 complete and verified** — segmented, routed, isolation tested both ways | Console cable test, then restrict `mac-server` to VLAN 10 and add WinNUT. Then **Phase 2** |
 | **OverTheWire Bandit** | ✅ Complete (mid-2026) | — |
 
