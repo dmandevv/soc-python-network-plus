@@ -27,7 +27,7 @@ Source: `../comptia-network-plus-n10-009-exam-objectives.pdf` (Document Version 
 - [x] [3.2 Network monitoring technologies](3.2-network-monitoring.md)
 - [x] [3.3 Disaster recovery concepts](3.3-disaster-recovery.md)
 - [x] [3.4 IPv4 and IPv6 network services](3.4-ipv4-ipv6-services.md)
-- [ ] [3.5 Network access and management methods](3.5-access-management.md)
+- [x] [3.5 Network access and management methods](3.5-access-management.md)
 
 ### 4.0 Network Security — 14%
 - [ ] [4.1 Basic network security concepts](4.1-security-concepts.md)

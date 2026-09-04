@@ -31,7 +31,7 @@ Claude follows this file to pick up where things left off, and updates *Where th
 
 | Track | Position | Next |
 |---|---|---|
-| **Network+** | 16 of 20 objectives complete | **3.5 — network access and management methods** |
+| **Network+** | **17 of 20 — Domain 3 complete** | **4.1 — basic network security concepts** |
 | **Packet Tracer** | **Rebuilding the homelab in simulation** — devices cabled, VLANs created, access ports assigned, trunk built and verified on both ends | **Step 4 — SVIs, IP addressing, and `ip routing` on the 3560** |
 | **Packet analysis** | **First exercise complete** — *First to Last*, 2026-08-09. FormBook C2, identified the infected host, user account, and C2 destination among decoy traffic | Next exercise **backwards** from 2026-08-09 — the site advises against starting with the oldest, since malware evolves and early exercises are less representative |
 | **Homelab** | **Phase 1 complete and verified** — segmented, routed, isolation tested both ways | Console cable test, then restrict `mac-server` to VLAN 10 and add WinNUT. Then **Phase 2** |
