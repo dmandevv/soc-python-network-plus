@@ -31,8 +31,8 @@ Claude follows this file to pick up where things left off, and updates *Where th
 
 | Track | Position | Next |
 |---|---|---|
-| **Network+** | **17 of 20 — Domain 3 complete** | **4.1 — basic network security concepts** |
-| **Packet Tracer** | **Homelab model working end to end** — VLANs, trunk, SVIs, inter-VLAN routing, and ACLs enforcing the isolation policy. DMZ, IoT, and Trusted all restricted; verified in both directions | **Step 8 — model the WAN side.** `ip nat` is available on the 3560, so NAT and an inbound ACL representing a traditional "443 only" DMZ can both be built |
+| **Network+** | **17 of 20 — 4.1 half complete.** Logical security through physical security written and quizzed (20/20) | **4.1 remainder** — deception technologies, security terminology, audits and compliance, segmentation enforcement. Then 4.2, then a quiz on all of 4.0 |
+| **Packet Tracer** | **Step 8 part-built.** XB6 router and Internet-Host placed and addressed; the 3560's `Fa0/1` is a routed port on `10.0.0.2` with a default route. **NAT cannot run on the 3560** — verified by `ip ?`, there is no `nat` keyword — so translation moves to XB6 | **Finish 8.5 on XB6** as a standalone NAT/PAT lesson, not as homelab modelling. Then scope a **RouterOS CHR lab on Proxmox** as the real pre-flight rig |
 | **Packet analysis** | **2 complete** — *First to Last* (FormBook C2) and *Easy as 123* (NetSupport RAT, lateral movement to a domain controller). Tradecraft notes in [analysis-lessons.md](analysis-lessons.md) | ***Lumma in the Room-ah!*, 2026-01-31** — then *It's a trap!* (2025-06-13) |
 | **Homelab** | **Phase 1 complete and verified** — segmented, routed, isolation tested both ways | Console cable test, then restrict `mac-server` to VLAN 10 and add WinNUT. Then **Phase 2** |
 | **OverTheWire Bandit** | ✅ Complete (mid-2026) | — |
