@@ -32,7 +32,7 @@ Two guards, both worth keeping:
 
 | Track | Position | Next |
 |---|---|---|
-| **Network+** | **17 of 20 — 4.1 half complete.** Logical security through physical security written and quizzed (20/20) | **4.1 remainder** — deception technologies, security terminology, audits and compliance, segmentation enforcement. Then 4.2, then a quiz on all of 4.0 |
+| **Network+** | **18 of 20 — 4.1 complete and quizzed.** Second half scored 19/20; the miss was treating "threat" as always an actor, which the notes now flag explicitly | **4.2 — types of attacks and their impact.** Then 4.3, then a quiz on all of 4.0 |
 | **TryHackMe** | **Account not yet made.** The workstation it runs on is built: Debian VM at `10.10.50.10` on the new sandbox VLAN, isolated and verified. No tooling installed yet | **Install tshark and OpenVPN**, make a free account, download the `.ovpn` config, connect, then start the **TShark** room |
 | **Network topics** | **Scenario 1 part-built.** XB6 router and Internet-Host placed; the 3560's `Fa0/1` is a routed port on `10.0.0.2`. **NAT cannot run on the 3560** — verified by `ip ?` — so translation moves to XB6 | **Finish scenario 1** (NAT/PAT on XB6), then **scenario 2 — STP** |
 | **Packet analysis** | **3 complete** — *First to Last* (FormBook C2), *Easy as 123* (NetSupport RAT), and *Lumma in the Room-ah!* (Lumma infostealer, **all answers correct**) | ***It's a trap!*, 2025-06-13** |
