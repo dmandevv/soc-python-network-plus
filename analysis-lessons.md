@@ -61,3 +61,13 @@ rather than
 > Tried to execute code on the domain controller.
 
 **The second overstates the evidence.** The distinction between observed and inferred is what makes a report survive scrutiny.
+
+## Corroboration works — *Lumma in the Room-ah!*, completed 2026-09-07
+
+**All answers correct**, and the method is worth recording because it was the direct fix for the previous exercise's failure.
+
+The account name was found once, and then **deliberately not written down** until it had been checked three ways: the account string and the full name appearing together in a single LDAP `searchResEntry` rather than being joined by inference, the name tied to the **infected host's IP** rather than merely present somewhere in the capture, and a count of how many non-machine accounts existed at all (`kerberos.CNameString && !(kerberos.CNameString contains "$")`).
+
+**The second check is the one that would have caught the Becka Rolf error.** That mistake was never about reading the wrong field — `brolf` was correct. It was about joining an artifact from one host to an artifact from another because the story fit. Filtering the corroborating search by the infected host's address makes that specific error impossible to commit silently.
+
+**⚠️ The habit to keep: one artifact is a hypothesis.** Finding a name that matches is the moment to slow down, not the moment to finish.
