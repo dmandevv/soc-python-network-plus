@@ -6,10 +6,12 @@ Claude follows this file to pick up where things left off, and updates *Where th
 
 ## The shape of a day
 
-**Every day starts at block 1 and works down the list in order.** No rotation.
+**The blocks are a continuous loop, not a daily reset.** Work down the list in order; a day ends wherever it ends, and the next session picks up at the **next** block. After block 5 it wraps back to block 1.
 
 ```
   1  Network+  →  2  TryHackMe  →  3  Network topics  →  4  Packet analysis  →  5  Homelab (2h)
+  ↑                                                                                        │
+  └────────────────────────────────────────────────────────────────────────────────────────┘
 ```
 
 | Block | Track | Source |
@@ -22,19 +24,23 @@ Claude follows this file to pick up where things left off, and updates *Where th
 
 **The order is deliberate, and the reason is motivational rather than technical.** The homelab is the part that needs no discipline — it would happily consume a whole day on its own. Everything above it is necessary and comparatively dull. **Putting the lab last makes it the thing the other four blocks are paid for**, which is the only arrangement where the studying reliably happens.
 
-**⚠️ So the failure mode to watch is the opposite of what a fixed order usually risks.** Block 5 will not get skipped. The danger is block 5 starting at 10am — the homelab quietly annexing the morning, and blocks 1-4 becoming something that happens tomorrow.
+**⚠️ The failure mode to watch is the opposite of what a fixed order usually risks.** Block 5 will not get skipped. The danger is block 5 starting at 10am — the homelab quietly annexing the day, and blocks 1-4 becoming something that happens tomorrow.
 
 Two guards, both worth keeping:
-- **The lab does not open until blocks 1-4 are done.** Not a rule about effort, just about order. Short blocks are fine; skipped ones are not.
+- **The lab does not open until 1-4 are done in the current pass.** Not a rule about effort, just about order. Short blocks are fine; skipped ones are not.
 - **The three-day skip trigger applies to blocks 1-4 only.** If one of them goes three days untouched, it gets replaced — the homelab is not a candidate for that trigger, because avoidance is not its problem.
 
+**⚠️ Do not restart at block 1 each session.** Changed 2026-09-09, having briefly been the rule. A daily reset meant blocks 4 and 5 were reached only on long days; a continuous loop reaches every block at the same rate regardless of how long any one day runs. **The *Where things stand* table below records where the last session stopped — start at the block after it.**
+
 ## Where things stand
+
+**Last session ended after block 3** (2026-09-09). **Resume at block 4.**
 
 | Track | Position | Next |
 |---|---|---|
 | **Network+** | **18 of 20 — 4.1 complete and quizzed.** Second half scored 19/20; the miss was treating "threat" as always an actor, which the notes now flag explicitly | **4.2 — types of attacks and their impact.** Then 4.3, then a quiz on all of 4.0 |
 | **TryHackMe** | **TShark room complete** (2026-09-08). Account made, own workstation rather than the AttackBox — Debian VM on VLAN 50, OpenVPN terminating there | **SOC Fundamentals**, then the two **Nmap** rooms |
-| **Network topics** | **Scenario 1 part-built.** XB6 router and Internet-Host placed; the 3560's `Fa0/1` is a routed port on `10.0.0.2`. **NAT cannot run on the 3560** — verified by `ip ?` — so translation moves to XB6 | **Finish scenario 1** (NAT/PAT on XB6), then **scenario 2 — STP** |
+| **Network topics** | **Scenario 2 (STP) complete.** Built in its own `stp-lab.pkt` — homelab modelling and exam scenarios stay in separate files now | **Scenario 3 — OSPF, single area** |
 | **Packet analysis** | **3 complete** — *First to Last* (FormBook C2), *Easy as 123* (NetSupport RAT), and *Lumma in the Room-ah!* (Lumma infostealer, **all answers correct**) | ***It's a trap!*, 2025-06-13** |
 | **Homelab** | **Phase 1 complete + VLAN 50 sandbox.** Outage 2026-09-08 — e1000e transmit hang on `nic0` took down the hypervisor, website and sandbox at once. Written up in the homelab `incidents.md` | Four open action items from the incident: **fix NUT**, Dell BIOS update, second NIC in Phase 2, syslog collector. Then console cable test and `mac-server` restriction |
 | **OverTheWire Bandit** | ✅ Complete (mid-2026) | — |
@@ -47,9 +53,9 @@ Two guards, both worth keeping:
 
 | # | Scenario | Objective | Status |
 |---|---|---|---|
-| **1** | **NAT and PAT.** Private VLANs translated to one outside address; prove it by reading the source address in the packet at the far end | 2.1 | **In progress** |
-| **2** | **Spanning Tree.** Three switches, redundant links. Watch the root election, identify port roles, then force root placement and watch it change | 2.2 | Queued |
-| **3** | **OSPF, single area.** Three routers, convergence observed, then a link cut and re-converged | 2.1 | Queued |
+| **1** | ~~**NAT and PAT**~~ | 2.1 | **Scrapped 2026-09-09.** Part-built, then abandoned — the 3560 cannot translate, so the build had drifted into modelling a router that is not the homelab's router. Revisit on a device that can do it |
+| **2** | **Spanning Tree** | 2.2 | ✅ **Complete 2026-09-09.** Root election, port roles, forced root placement, measured failover, PortFast and BPDU Guard. **Measured: 9 lost pings on PVST+, zero on RSTP** |
+| **3** | **OSPF, single area.** Three routers, convergence observed, then a link cut and re-converged | 2.1 | **Next** |
 | **4** | **EtherChannel / LACP.** Aggregate two links, verify load distribution, fail one member | 2.2 | Queued |
 | **5** | **First-hop redundancy (HSRP).** Two gateways, one virtual address, failover tested from a host | 2.1 | Queued |
 | **6** | **DHCP relay.** One central server, several remote VLANs, `ip helper-address`, and the giaddr field read in the capture | 3.4 | Queued |
