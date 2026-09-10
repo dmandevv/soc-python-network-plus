@@ -32,12 +32,12 @@ Claude follows this file to pick up where things left off, and updates *Where th
 
 ## Where things stand
 
-**Last session ended after block 1** (2026-09-10). **Resume at block 2.**
+**Last session ended after block 2** (2026-09-10). **Resume at block 3.**
 
 | Track | Position | Next |
 |---|---|---|
 | **Network+** | **4.2 in progress.** Covered: DoS/DDoS, VLAN hopping, MAC flooding, ARP poisoning/spoofing, DNS poisoning/spoofing | **4.2 remainder** — rogue DHCP and APs, evil twin, on-path, social engineering, malware. Then 4.3, then a quiz on all of 4.0 |
-| **Packet Tracer** | **2 scenarios done** — STP, and double tagging. NAT scrapped | **Scenario 3 — OSPF, single area** |
+| **Packet Tracer** | **3 scenarios done** — STP, double tagging, OSPF single area. NAT scrapped | **Scenario 4 — EtherChannel / LACP** |
 | **Homelab** | **Phase 1 complete + VLAN 50 sandbox + bastion.** Console abandoned as a display; MAC-connect narrowed; NUT verified | **RA Guard** on the bridge ports, then the **syslog collector** |
 | **Homelab audit** | **Not started** | **Audit 1 — map the network from observed state** |
 
@@ -52,7 +52,7 @@ Claude follows this file to pick up where things left off, and updates *Where th
 | **1** | ~~NAT and PAT~~ | 2.1 | **Scrapped** — the 3560 cannot translate |
 | **2** | **Spanning Tree** | 2.2 | ✅ **Complete.** 9 lost pings on PVST+, **zero on RSTP** |
 | **2b** | **VLAN double tagging** | 4.2 | ✅ **Complete.** Untagged native hop observed and closed. Attack itself not reproducible in Packet Tracer |
-| **3** | **OSPF, single area.** Three routers, convergence observed, then a link cut and re-converged | 2.1 | **Next** |
+| **3** | **OSPF, single area** | 2.1 | ✅ **Complete.** Adjacencies, AD vs metric, the 100 Mbps reference-bandwidth trap, and **asymmetric routing produced by a one-sided cost change**. Findings in `objectives/2.1-routing-technologies.md`. Link-failure reconvergence not measured |
 | **4** | **EtherChannel / LACP.** Aggregate two links, verify distribution, fail one member | 2.2 | Queued |
 | **5** | **First-hop redundancy (HSRP).** Two gateways, one virtual address, failover from a host | 2.1 | Queued |
 | **6** | **DHCP relay.** Central server, remote VLANs, `ip helper-address`, giaddr read in the capture | 3.4 | Queued |
