@@ -34,11 +34,11 @@ Two guards, both worth keeping:
 
 ## Where things stand
 
-**Last session ended after block 5** (2026-09-09). **Resume at block 1.** Block 4 was skipped this pass and keeps its place in the queue.
+**Last session ended after block 1** (2026-09-10). **Resume at block 2.**
 
 | Track | Position | Next |
 |---|---|---|
-| **Network+** | **18 of 20 — 4.1 complete and quizzed.** Second half scored 19/20; the miss was treating "threat" as always an actor, which the notes now flag explicitly | **4.2 — types of attacks and their impact.** Then 4.3, then a quiz on all of 4.0 |
+| **Network+** | **4.2 in progress.** Covered: DoS/DDoS, VLAN hopping, MAC flooding, ARP poisoning/spoofing, DNS poisoning/spoofing. Double tagging built and verified in Packet Tracer | **4.2 remainder** — rogue DHCP and APs, evil twin, on-path, social engineering, malware. Then 4.3, then a quiz on all of 4.0 |
 | **TryHackMe** | **TShark room complete** (2026-09-08). Account made, own workstation rather than the AttackBox — Debian VM on VLAN 50, OpenVPN terminating there | **SOC Fundamentals**, then the two **Nmap** rooms |
 | **Network topics** | **Scenario 2 (STP) complete.** Built in its own `stp-lab.pkt` — homelab modelling and exam scenarios stay in separate files now | **Scenario 3 — OSPF, single area** |
 | **Packet analysis** | **3 complete** — *First to Last* (FormBook C2), *Easy as 123* (NetSupport RAT), and *Lumma in the Room-ah!* (Lumma infostealer, **all answers correct**) | ***It's a trap!*, 2025-06-13** |
