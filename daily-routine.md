@@ -1,36 +1,34 @@
 # Daily Routine
 
-A guide, not a syllabus. Sources, rankings, and free-tier notes live in **[practice-resources.md](practice-resources.md)** — this file only says **what to work on today and where each track currently stands.**
+A guide, not a syllabus. Sources, rankings, and free-tier notes live in **[practice-resources.md](practice-resources.md)** — this file only says **what to work on and where each track currently stands.**
 
 Claude follows this file to pick up where things left off, and updates *Where things stand* as blocks are completed.
 
 ## The shape of a day
 
-**The blocks are a continuous loop, not a daily reset.** Work down the list in order; a day ends wherever it ends, and the next session picks up at the **next** block. After block 5 it wraps back to block 1.
+**The blocks are a continuous loop, not a daily reset.** Work down the list in order; a day ends wherever it ends, and the next session picks up at the **next** block. After block 4 it wraps to block 1.
 
 ```
-  1  Network+  →  2  TryHackMe  →  3  Network topics  →  4  Packet analysis  →  5  Homelab (2h)
-  ↑                                                                                        │
-  └────────────────────────────────────────────────────────────────────────────────────────┘
+  1  Network+  →  2  Packet Tracer  →  3  Homelab  →  4  Homelab audit
+  ↑                                                                  │
+  └──────────────────────────────────────────────────────────────────┘
 ```
 
 | Block | Track | Source |
 |---|---|---|
 | **1** | Network+ — one objective section | The walkthrough in `objectives/` |
-| **2** | **TryHackMe** — free rooms | [tryhackme.com](https://tryhackme.com) |
-| **3** | **Network topics** — one scenario, built and verified | Packet Tracer. Queue below |
-| **4** | Packet analysis | malware-traffic-analysis.net |
-| **5** | **Homelab — 2 hours** | The build itself. See [soc-python-homelab](https://github.com/dmandevv/soc-python-homelab) |
+| **2** | **Packet Tracer** — one scenario, built and verified | Queue below |
+| **3** | **Homelab — 2 hours** | The build itself. See [soc-python-homelab](https://github.com/dmandevv/soc-python-homelab) |
+| **4** | **Homelab audit** — Network+ concepts on real gear | Queue below |
 
-**The order is deliberate, and the reason is motivational rather than technical.** The homelab is the part that needs no discipline — it would happily consume a whole day on its own. Everything above it is necessary and comparatively dull. **Putting the lab last makes it the thing the other four blocks are paid for**, which is the only arrangement where the studying reliably happens.
+**Restructured 2026-09-10 around one goal: mostly hands-on learning of the Network+ material.** Blocks 2 and 4 are both practice, on simulated and real gear respectively — and block 4 is the one that didn't exist before.
 
-**⚠️ The failure mode to watch is the opposite of what a fixed order usually risks.** Block 5 will not get skipped. The danger is block 5 starting at 10am — the homelab quietly annexing the day, and blocks 1-4 becoming something that happens tomorrow.
+**⚠️ Blocks 3 and 4 are both lab work, and they are both at the end on purpose.** The lab needs no discipline; it would happily consume a whole day. Blocks 1 and 2 are the ones that only happen if they come first.
 
-Two guards, both worth keeping:
-- **The lab does not open until 1-4 are done in the current pass.** Not a rule about effort, just about order. Short blocks are fine; skipped ones are not.
-- **The three-day skip trigger applies to blocks 1-4 only.** If one of them goes three days untouched, it gets replaced — the homelab is not a candidate for that trigger, because avoidance is not its problem.
+- **The lab does not open until 1 and 2 are done in the current pass.** Short blocks are fine; skipped ones are not.
+- **The three-day skip trigger applies to blocks 1 and 2 only.** Avoidance is not the lab's problem.
 
-**⚠️ Do not restart at block 1 each session.** Changed 2026-09-09, having briefly been the rule. A daily reset meant blocks 4 and 5 were reached only on long days; a continuous loop reaches every block at the same rate regardless of how long any one day runs. **The *Where things stand* table below records where the last session stopped — start at the block after it.**
+**⚠️ Do not restart at block 1 each session.** The *Where things stand* table below records where the last session stopped — start at the block **after** it.
 
 ## Where things stand
 
@@ -38,58 +36,74 @@ Two guards, both worth keeping:
 
 | Track | Position | Next |
 |---|---|---|
-| **Network+** | **4.2 in progress.** Covered: DoS/DDoS, VLAN hopping, MAC flooding, ARP poisoning/spoofing, DNS poisoning/spoofing. Double tagging built and verified in Packet Tracer | **4.2 remainder** — rogue DHCP and APs, evil twin, on-path, social engineering, malware. Then 4.3, then a quiz on all of 4.0 |
-| **TryHackMe** | **TShark room complete** (2026-09-08). Account made, own workstation rather than the AttackBox — Debian VM on VLAN 50, OpenVPN terminating there | **SOC Fundamentals**, then the two **Nmap** rooms |
-| **Network topics** | **Scenario 2 (STP) complete.** Built in its own `stp-lab.pkt` — homelab modelling and exam scenarios stay in separate files now | **Scenario 3 — OSPF, single area** |
-| **Packet analysis** | **3 complete** — *First to Last* (FormBook C2), *Easy as 123* (NetSupport RAT), and *Lumma in the Room-ah!* (Lumma infostealer, **all answers correct**) | ***It's a trap!*, 2025-06-13** |
-| **Homelab** | **Bastion built** 2026-09-09 — desktop reach narrowed to it, MAC-connect scoped to VLANs 10/20 (the WAN path is closed), NUT verified end to end. **The console is no longer being pursued** — usable blind only, recovery card written | **RA Guard** on the bridge ports, then the **syslog collector** — the prerequisite for everything in Phase 3 |
-| **OverTheWire Bandit** | ✅ Complete (mid-2026) | — |
+| **Network+** | **4.2 in progress.** Covered: DoS/DDoS, VLAN hopping, MAC flooding, ARP poisoning/spoofing, DNS poisoning/spoofing | **4.2 remainder** — rogue DHCP and APs, evil twin, on-path, social engineering, malware. Then 4.3, then a quiz on all of 4.0 |
+| **Packet Tracer** | **2 scenarios done** — STP, and double tagging. NAT scrapped | **Scenario 3 — OSPF, single area** |
+| **Homelab** | **Phase 1 complete + VLAN 50 sandbox + bastion.** Console abandoned as a display; MAC-connect narrowed; NUT verified | **RA Guard** on the bridge ports, then the **syslog collector** |
+| **Homelab audit** | **Not started** | **Audit 1 — map the network from observed state** |
 
-## Block 3 — the network topics queue
+## Block 2 — Packet Tracer scenario queue
 
-**One scenario per entry, each finishable within two blocks.** Topics are drawn from the N10-009 objectives, chosen for things the homelab cannot demonstrate — redundancy, dynamic routing, and failure behaviour need more devices than one switch provides.
+**One scenario per entry, each finishable within two blocks**, drawn from the N10-009 objectives and chosen for things the homelab cannot demonstrate — redundancy, dynamic routing, and failure behaviour need more devices than one switch provides.
 
-**⚠️ This block is exam practice, not homelab modelling.** The Packet Tracer model diverges from the live network in NAT, ACL statefulness, drop-versus-reject behaviour, and syntax. Trying to be both made it confusing and neither. **A RouterOS CHR lab on Proxmox is the tool for pre-flight testing homelab changes** — see the homelab README.
+**⚠️ Exam practice, not homelab modelling.** Each scenario gets its own `.pkt` file. Mixing the two is what made the NAT attempt confusing.
 
 | # | Scenario | Objective | Status |
 |---|---|---|---|
-| **1** | ~~**NAT and PAT**~~ | 2.1 | **Scrapped 2026-09-09.** Part-built, then abandoned — the 3560 cannot translate, so the build had drifted into modelling a router that is not the homelab's router. Revisit on a device that can do it |
-| **2** | **Spanning Tree** | 2.2 | ✅ **Complete 2026-09-09.** Root election, port roles, forced root placement, measured failover, PortFast and BPDU Guard. **Measured: 9 lost pings on PVST+, zero on RSTP** |
+| **1** | ~~NAT and PAT~~ | 2.1 | **Scrapped** — the 3560 cannot translate |
+| **2** | **Spanning Tree** | 2.2 | ✅ **Complete.** 9 lost pings on PVST+, **zero on RSTP** |
+| **2b** | **VLAN double tagging** | 4.2 | ✅ **Complete.** Untagged native hop observed and closed. Attack itself not reproducible in Packet Tracer |
 | **3** | **OSPF, single area.** Three routers, convergence observed, then a link cut and re-converged | 2.1 | **Next** |
-| **4** | **EtherChannel / LACP.** Aggregate two links, verify load distribution, fail one member | 2.2 | Queued |
-| **5** | **First-hop redundancy (HSRP).** Two gateways, one virtual address, failover tested from a host | 2.1 | Queued |
-| **6** | **DHCP relay.** One central server, several remote VLANs, `ip helper-address`, and the giaddr field read in the capture | 3.4 | Queued |
+| **4** | **EtherChannel / LACP.** Aggregate two links, verify distribution, fail one member | 2.2 | Queued |
+| **5** | **First-hop redundancy (HSRP).** Two gateways, one virtual address, failover from a host | 2.1 | Queued |
+| **6** | **DHCP relay.** Central server, remote VLANs, `ip helper-address`, giaddr read in the capture | 3.4 | Queued |
 | **7** | **IPv6 and SLAAC.** Dual-stack a segment, watch RA and DAD, compare with DHCPv6 | 1.7 / 3.4 | Queued |
-| **8** | **VLSM and summarisation.** Three sites, one address block, subnet it by hand, then summarise the routes | 1.7 | Queued |
-| **9** | **Wireless channel planning.** Three APs, non-overlapping channels, co-channel interference demonstrated | 2.3 | Queued |
+| **8** | **VLSM and summarisation.** Three sites, one block, subnet by hand then summarise | 1.7 | Queued |
+| **9** | **Wireless channel planning.** Three APs, non-overlapping channels, co-channel interference | 2.3 | Queued |
 | **10** | **QoS.** Voice prioritised over bulk traffic across a congested link | 2.1 | Queued |
 
-**Scenario 2 is deliberately early** — STP has been on the wants list since August and has never been practised.
+## Block 4 — Homelab audit queue
+
+**Added 2026-09-10.** Where block 2 builds a scenario to learn a concept, this one **goes looking for the concept in a network that already exists** — and checks whether it is doing what the documentation claims.
+
+**Two things make this worth a block of its own:**
+
+- **The gear is real**, so the answers are not a simulator's opinion. Duplex mismatches, error counters, and CPU ceilings exist here and not in Packet Tracer
+- **It finds drift.** Five documentation errors turned up in one week by accident. Looking on purpose will find more
+
+| # | Audit | Objectives | Status |
+|---|---|---|---|
+| **1** | **Map the network from observed state.** ARP tables, bridge host table, `/ip route`, neighbour discovery — build the topology from what the switch says, then diff it against `network-diagrams.md` | 1.6, 3.1 | **Next** |
+| **2** | **Re-verify the firewall policy matrix.** Test every cell of the table in `network-diagrams.md` in both directions. Three days of changes have gone in since it was written | 4.3 | Queued |
+| **3** | **VLAN and trunk audit.** Bridge VLAN table, PVIDs, tagged/untagged per port. Find any port not doing what `ip-plan.md` claims | 2.2 | Queued |
+| **4** | **Trace one packet end to end.** Desktop → website VM, naming every table consulted: ARP, bridge host, routing, firewall chain, NAT. **The single best OSI exercise available** | 1.1, 2.1 | Queued |
+| **5** | **Layer 1 health.** Interface counters, CRC and FCS errors, duplex and speed on every active port. Errors accumulate silently and only show up as "the network is slow" | 5.2 | Queued |
+| **6** | **DHCP lifecycle on the wire.** Capture a real DORA exchange, read the options, T1/T2, and the lease table | 3.4 | Queued |
+| **7** | **DNS path audit.** Who resolves for whom, what is cached, where queries actually go. Feeds the Phase 3 logged-resolver plan | 3.4 | Queued |
+| **8** | **Re-measure throughput.** `iperf3` across VLANs against the recorded **251 Mbps single flow / 468 Mbps across four**. Confirm the CPU ceiling still holds after this week's rule changes | 5.4 | Queued |
+| **9** | **Spanning tree on real hardware.** RSTP state on the CRS326 — root bridge, port roles, and why a single-switch topology still runs it. Contrast with the Packet Tracer lab | 2.2 | Queued |
+| **10** | **IPv6 exposure audit.** Is it running unintentionally? Link-local addresses, Router Advertisements, and what a rogue RA would reach. Directly feeds the Phase 2 RA Guard task | 1.7, 4.2 | Queued |
+
+## Parked tracks
+
+**Not deleted — parked with their position, so they can be resumed.**
+
+| Track | Position when parked | Why |
+|---|---|---|
+| **TryHackMe** | TShark room complete. SOC Fundamentals turned out to be premium | Parked 2026-09-10. **Nmap Live Host Discovery** (`nmap01`) is the next room if it returns. Use [tryhackme.com/free-rooms](https://tryhackme.com/free-rooms) — third-party free-room lists are stale |
+| **Packet analysis** | **3 complete** — *First to Last*, *Easy as 123*, *Lumma in the Room-ah!* (all answers correct). Tradecraft in [analysis-lessons.md](analysis-lessons.md) | Parked 2026-09-10. Next would be ***It's a trap!*** (2025-06-13). **This is the SOC-analyst track rather than the exam track** — worth restarting after the exam |
 
 ## Progression triggers
 
-Swap tracks when a condition is met, not on a schedule:
-
 | When | Change |
 |---|---|
-| **Network+ objectives finish** | Block 1 becomes practice exams (see the ExamCompass order); block 3 moves from Packet Tracer to **Containerlab** |
-| **The topics queue empties** | Block 3 becomes Containerlab, or folds into the CHR lab |
-| **TryHackMe's useful free rooms run out** | Block 2 becomes CyberDefenders, or HackTheBox once the goal shifts past Security+ |
-| **Phase 2 telemetry exists** | Block 5 gains real SOC work — investigating the lab's own logs and alerts, rather than simulated ones |
-| **A block in 1-4 is skipped three days running** | Replace it. A track that is being avoided is not being learned. Block 5 is exempt — it is never the one avoided |
+| **Network+ objectives finish** | Block 1 becomes practice exams |
+| **The Packet Tracer queue empties** | Block 2 becomes **Containerlab**, or folds into a RouterOS CHR lab on Proxmox |
+| **The audit queue empties** | Block 4 restarts from audit 1 — the answers change as the lab grows, and that is the point |
+| **Phase 2 telemetry exists** | Block 4 gains real detection work rather than configuration review |
+| **A block in 1-2 is skipped three days running** | Replace it. A track being avoided is not being learned |
 
-## Why TryHackMe rather than HackTheBox
+## Why the lab blocks come last
 
-**TryHackMe's free tier is genuinely large — 650+ rooms — and its beginner material is blue-team shaped.** HackTheBox's free offering is narrower and weighted toward offensive work; its defensive content lives in Academy modules that mostly cost money. For a SOC analyst target, TryHackMe is the better free hours.
+It previously competed with these hours and lost, which is the wrong way round. **Simulated work was a rehearsal for the lab; the lab is the thing itself.**
 
-**⚠️ The SOC Level 1 path is mostly premium.** That is fine for now — the free Pre Security and Cyber Security 101 material overlaps the Network+ syllabus directly, so block 2 reinforces block 1 rather than competing with it. Revisit a subscription when the free network material runs out.
-
-**AttackBox is capped at one hour per day on the free tier**, but many rooms need no AttackBox at all. Prefer those while the cap matters.
-
-**HackTheBox is not dropped, only deferred** — it becomes the better choice after Security+, when the goal shifts from fundamentals to detection engineering and adversary emulation.
-
-## Why the homelab is a block rather than a competitor
-
-It previously competed with these hours and lost, which is the wrong way round. **Simulated SOC work was a rehearsal for the lab; the lab is the thing itself.**
-
-**⚠️ It is also the block that has to wait.** Doing it first feels efficient and is not — see the ordering note at the top. It has no security telemetry yet, so there is nothing to investigate — the switch's logs live in RAM and rotate away within hours. **Building the collection layer is the work**, and it is what makes SOC practice possible later. Start with getting syslog off the switch: everything else builds on top of it.
+**⚠️ It still has no security telemetry**, so there is nothing to investigate — the switch's logs live in RAM and rotate away within hours. **Building the collection layer is the work**, and it is what makes SOC practice possible later. Start with syslog off the switch: everything else builds on top of it.
