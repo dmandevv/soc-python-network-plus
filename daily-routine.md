@@ -34,7 +34,7 @@ Two guards, both worth keeping:
 
 ## Where things stand
 
-**Last session ended after block 3** (2026-09-09). **Resume at block 4.**
+**Last session ended after block 5** (2026-09-09). **Resume at block 1.** Block 4 was skipped this pass and keeps its place in the queue.
 
 | Track | Position | Next |
 |---|---|---|
@@ -42,7 +42,7 @@ Two guards, both worth keeping:
 | **TryHackMe** | **TShark room complete** (2026-09-08). Account made, own workstation rather than the AttackBox — Debian VM on VLAN 50, OpenVPN terminating there | **SOC Fundamentals**, then the two **Nmap** rooms |
 | **Network topics** | **Scenario 2 (STP) complete.** Built in its own `stp-lab.pkt` — homelab modelling and exam scenarios stay in separate files now | **Scenario 3 — OSPF, single area** |
 | **Packet analysis** | **3 complete** — *First to Last* (FormBook C2), *Easy as 123* (NetSupport RAT), and *Lumma in the Room-ah!* (Lumma infostealer, **all answers correct**) | ***It's a trap!*, 2025-06-13** |
-| **Homelab** | **Phase 1 complete + VLAN 50 sandbox.** Outage 2026-09-08 — e1000e transmit hang on `nic0` took down the hypervisor, website and sandbox at once. Written up in the homelab `incidents.md` | Four open action items from the incident: **fix NUT**, Dell BIOS update, second NIC in Phase 2, syslog collector. Then console cable test and `mac-server` restriction |
+| **Homelab** | **Bastion built** 2026-09-09 — desktop reach narrowed to it, MAC-connect scoped to VLANs 10/20 (the WAN path is closed), NUT verified end to end. **The console is no longer being pursued** — usable blind only, recovery card written | **RA Guard** on the bridge ports, then the **syslog collector** — the prerequisite for everything in Phase 3 |
 | **OverTheWire Bandit** | ✅ Complete (mid-2026) | — |
 
 ## Block 3 — the network topics queue
