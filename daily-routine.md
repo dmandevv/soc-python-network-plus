@@ -38,7 +38,7 @@ Claude follows this file to pick up where things left off, and updates *Where th
 |---|---|---|
 | **Network+** | **4.2 in progress.** Covered: DoS/DDoS, VLAN hopping, MAC flooding, ARP poisoning/spoofing, DNS poisoning/spoofing | **4.2 remainder** — rogue DHCP and APs, evil twin, on-path, social engineering, malware. Then 4.3, then a quiz on all of 4.0 |
 | **Packet Tracer** | **3 scenarios done** — STP, double tagging, OSPF single area. NAT scrapped | **Scenario 4 — EtherChannel / LACP** |
-| **Homelab** | **RA Guard enabled** 2026-09-10 — no port needed trusting, nothing broke. Configured but not yet demonstrated | **Syslog collector** — the Phase 3 prerequisite. Then **DHCP snooping**, which needs its own session and a lease-renewal test |
+| **Homelab** | **Syslog collector built** 2026-09-10 — switch shipping over TCP, ISO 8601 timestamps, per-host files, 30-day rotation. RA Guard enabled earlier the same day | **Ship logs from Proxmox and the VMs** too, then **DHCP snooping** (own session, lease-renewal test) |
 | **Homelab audit** | **Not started** | **Audit 1 — map the network from observed state** |
 
 ## Block 2 — Packet Tracer scenario queue
