@@ -55,4 +55,4 @@ Bandit being already complete removes the three-week ramp — packet analysis st
 
 **Packet Tracer belongs to the Network+ period and Containerlab to what follows** — the first reinforces the exam, the second builds past it.
 
-Day-to-day position is tracked in **[daily-routine.md](daily-routine.md)**.
+Day-to-day position is tracked in the journey-wide **[daily routine](https://github.com/dmandevv/soc-python-journey/blob/main/daily-routine.md)**.

@@ -18,8 +18,9 @@ Each completed objective gets a **20-question quiz** with plausible distractors,
 |---|---|
 | **[objectives/](objectives/)** | One file per exam objective, with every term explained. **[Index and progress](objectives/README.md)** |
 | **[practice-resources.md](practice-resources.md)** | Ranked free hands-on training sources, with what each is for and what its free tier actually covers |
-| **[daily-routine.md](daily-routine.md)** | The working guide — the shape of a day and where each track currently stands |
 | `comptia-network-plus-n10-009-exam-objectives.pdf` | The source document, version 6.0 |
+
+**Day-to-day position** is tracked in the journey-wide [daily routine](https://github.com/dmandevv/soc-python-journey/blob/main/daily-routine.md), which covers every track rather than Network+ alone.
 
 ## Progress
 
