@@ -43,16 +43,8 @@ A managed switch, a hypervisor, and a live internet-facing service is more than 
 
 ## Rotation
 
-Bandit being already complete removes the three-week ramp — packet analysis starts immediately.
-
-| Block | Now | After the Network+ objectives finish |
-|---|---|---|
-| **1** | **Network+ objective section** | Practice exams |
-| **2** | **Packet Tracer** | **Containerlab** |
-| **3** | **malware-traffic-analysis.net** | unchanged |
-| **4** | **LetsDefend** | **Splunk + BOTS**, then the live Phase 3 SOC |
-| *5* | *optional — TryHackMe, CyberDefenders, picoCTF* | *unchanged* |
+**Which resources run in which block now lives in the journey-wide [daily routine](https://github.com/dmandevv/soc-python-journey/blob/main/daily-routine.md)**, along with day-to-day position. The rotation table that stood here had drifted — it still listed LetsDefend — and one source of truth is easier to keep honest than two.
 
 **Packet Tracer belongs to the Network+ period and Containerlab to what follows** — the first reinforces the exam, the second builds past it.
 
-Day-to-day position is tracked in the journey-wide **[daily routine](https://github.com/dmandevv/soc-python-journey/blob/main/daily-routine.md)**.
+**For Domain 5 troubleshooting practice,** the relevant sources above are **Packet Tracer** (pre-broken Networking Academy activities) and **Wireshark sample captures**.
