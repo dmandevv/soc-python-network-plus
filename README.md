@@ -27,12 +27,12 @@ Each completed objective gets a **20-question quiz** with plausible distractors,
 |---|---|---|
 | 1.0 Networking Concepts | 23% | ✅ **8 / 8** |
 | 2.0 Network Implementation | 20% | ✅ **4 / 4** |
-| 3.0 Network Operations | 19% | **4 / 5** |
-| 4.0 Network Security | 14% | 0 / 3 |
+| 3.0 Network Operations | 19% | ✅ **5 / 5** |
+| 4.0 Network Security | 14% | **2 / 3** |
 | 5.0 Network Troubleshooting | 24% | 0 / 5 |
 
-**16 of 20 objectives complete.**
+**19 of 25 objectives complete.**
 
 ## Related
 
-The [homelab](https://github.com/dmandevv/soc-python-homelab) runs in parallel — a segmented, routed network built with the same material, where the concepts here get applied to real hardware rather than to exam questions.
+A homelab runs in parallel — a segmented, routed network built with the same material, where the concepts here get applied to real hardware rather than to exam questions.
