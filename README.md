@@ -29,10 +29,10 @@ Each completed objective gets a **20-question quiz** with plausible distractors,
 | 1.0 Networking Concepts | 23% | ✅ **8 / 8** |
 | 2.0 Network Implementation | 20% | ✅ **4 / 4** |
 | 3.0 Network Operations | 19% | ✅ **5 / 5** |
-| 4.0 Network Security | 14% | **2 / 3** |
+| 4.0 Network Security | 14% | ✅ **3 / 3** |
 | 5.0 Network Troubleshooting | 24% | 0 / 5 |
 
-**19 of 25 objectives complete.**
+**20 of 25 objectives complete** — everything except Domain 5.
 
 ## Related
 

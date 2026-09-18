@@ -32,7 +32,7 @@ Source: `../comptia-network-plus-n10-009-exam-objectives.pdf` (Document Version 
 ### 4.0 Network Security — 14%
 - [x] [4.1 Basic network security concepts](4.1-security-concepts.md)
 - [x] [4.2 Types of attacks](4.2-attacks.md)
-- [ ] [4.3 Security features, defense techniques, and solutions](4.3-security-features.md)
+- [x] [4.3 Security features, defense techniques, and solutions](4.3-security-features.md)
 
 ### 5.0 Network Troubleshooting — 24%
 - [ ] [5.1 Troubleshooting methodology](5.1-troubleshooting-methodology.md)
