@@ -35,7 +35,7 @@ Source: `../comptia-network-plus-n10-009-exam-objectives.pdf` (Document Version 
 - [x] [4.3 Security features, defense techniques, and solutions](4.3-security-features.md)
 
 ### 5.0 Network Troubleshooting — 24%
-- [ ] [5.1 Troubleshooting methodology](5.1-troubleshooting-methodology.md)
+- [x] [5.1 Troubleshooting methodology](5.1-troubleshooting-methodology.md)
 - [ ] [5.2 Cabling and physical interface issues](5.2-cabling-physical-issues.md)
 - [ ] [5.3 Network service issues](5.3-network-service-issues.md)
 - [ ] [5.4 Performance issues](5.4-performance-issues.md)
